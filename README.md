@@ -1,21 +1,24 @@
 # Copyforge — AI Content Studio
 
-An AI-powered content studio for small businesses. Pick your industry — clothing brand, restaurant, or car showroom — and generate social captions, ad copy, weekly content plans, and reusable templates in seconds.
+React + Vite + TypeScript frontend with an Express backend for secure AI generation.
 
-## How it works
+## Run
 
-Open `index.html` in any browser. No installation, no build step, no server required — it's a single static page.
+1. Install Node.js 18+.
+2. Run `npm install`.
+3. Copy `.env.example` to `.env`.
+4. Add your Anthropic API key to `.env`.
+5. Run `npm run dev`.
+6. Open the Vite URL shown in the terminal (normally http://localhost:5173).
 
-1. Choose your business type on the landing screen
-2. Pick a tool: Captions / Ad Copy / Content Ideas / Brand Templates
-3. Fill in a few details about your product or promotion
-4. Click Generate — real AI writes the content live in the browser
+The API key stays on the server and is never placed in browser code.
 
-## Deployment
+## Features
 
-This is a static site (just `index.html`), so it deploys as-is on Vercel, Netlify, GitHub Pages, or any static host — no configuration needed.
-
-## Tech
-
-Plain HTML, CSS, and JavaScript. No frameworks, no dependencies, no build tools.
-# Copy-Fordge
+- Industry selector: clothing, restaurant, car showroom, salon, real estate, gym, electronics, bakery, jewelry.
+- Working tabs: Captions, Ad Copy, Content Ideas, Brand Templates, Hashtags & Bio.
+- Real AI generation through `/api/generate`.
+- Demo/fallback generation when no API key is configured, so the UI still works.
+- Copy buttons, regenerate, clear, local history, download TXT.
+- Responsive premium glass/3D UI.
+- Credit: Created by Abubakar Siddique.
